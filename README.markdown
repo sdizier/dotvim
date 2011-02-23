@@ -1,7 +1,7 @@
 # Installation
 
 Clone the git repository and it's submodules.
-    git clone https://wmwong@github.com/wmwong/dotvim.git ~/.vim
+    git clone https://sdizier@github.com/sdizier/dotvim.git ~/.vim
     cd ~/.vim
     git submodule init
     git submodule update
