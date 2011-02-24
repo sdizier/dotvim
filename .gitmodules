@@ -63,4 +63,4 @@
 	url = https://github.com/tpope/vim-rails.git
 [submodule "bundle/git"]
 	path = bundle/git
-	url = https://github.com/tpope/vim-git.git
+	url = https://github.com/motemen/git-vim.git
