@@ -132,7 +132,6 @@ nmap <leader>ss :SessionSave<CR>
 nmap <leader>sa :SessionSaveAs<CR>
 
 nmap <C-f> :vimgrep 
-nmap <C-F> <leader>t
 " Enable the matchit plugin for selecting blocks.
 " This is required by textobj-rubyblock.
 runtime macros/matchit.vim
