@@ -131,7 +131,7 @@ nmap <leader>s :SessionList<CR>
 nmap <leader>ss :SessionSave<CR>
 nmap <leader>sa :SessionSaveAs<CR>
 
-cmap W w
+cmap W w<cr>
 
 nmap <C-f> :vimgrep 
 " Enable the matchit plugin for selecting blocks.
