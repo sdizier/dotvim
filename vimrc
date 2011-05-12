@@ -131,7 +131,11 @@ nmap <leader>s :SessionList<CR>
 nmap <leader>ss :SessionSave<CR>
 nmap <leader>sa :SessionSaveAs<CR>
 
+" Quick save
 cmap W w<cr>
+
+" Map Quit to Q
+cmap Q q<cr>
 
 nmap <C-f> :vimgrep 
 " Enable the matchit plugin for selecting blocks.
