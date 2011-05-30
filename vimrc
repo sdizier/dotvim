@@ -137,7 +137,7 @@ cmap W w<cr>
 " Map Quit to Q
 cmap Q q<cr>
 
-nmap <C-f> :vimgrep 
+nmap <C-f> :Ack 
 " Enable the matchit plugin for selecting blocks.
 " This is required by textobj-rubyblock.
 runtime macros/matchit.vim
