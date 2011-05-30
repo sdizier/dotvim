@@ -7,10 +7,13 @@ Clone the git repository and it's submodules.
     git submodule update
 
 Softlink your .vimrc.
+
     ln -s ~/.vim/vimrc ~/.vimrc
 
 Install Ack
+
     sudo apt-get install ack-grep
+
 Softlink ack
 
     sudo ln -s /usr/bin/ack-grep /usr/bin/ack
