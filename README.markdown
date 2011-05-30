@@ -7,7 +7,16 @@ Clone the git repository and it's submodules.
     git submodule update
 
 Softlink your .vimrc.
+
     ln -s ~/.vim/vimrc ~/.vimrc
+
+Install Ack
+
+    sudo apt-get install ack-grep
+
+Softlink ack
+
+    sudo ln -s /usr/bin/ack-grep /usr/bin/ack
 
 Command-t requires vim to be compiled with ruby. It also needs to be made using the system's default ruby.
     sudo apt-get install vim-gnome -y # installs gvim which recompiles vim with ruby
