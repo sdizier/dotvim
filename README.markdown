@@ -11,6 +11,14 @@ Switch to the ~/.vim directory and fetch submodules
   	cd ~/.vim
   	git submodule init
   	git sumbodule update
+  	
+Install Ack
+
+	sudo apt-get install ack-grep
+	
+Softlink ack
+
+	sudo ln -s /usr/bin/ack-grep /usr/bin/ack
 
 ## Command-T
 
