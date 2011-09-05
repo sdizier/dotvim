@@ -1,50 +1,39 @@
 # Installation
 
-Clone the git repository and it's submodules.
-    git clone https://sdizier@github.com/sdizier/dotvim.git ~/.vim
-    cd ~/.vim
-    git submodule init
-    git submodule update
+      git clone git://github.com/diazruy/dotvim.git ~/.vim
 
-Softlink your .vimrc.
+Create symlinks
+	
+  	ln -s ~/.vim/vimrc ~/.vimrc
 
-    ln -s ~/.vim/vimrc ~/.vimrc
+Switch to the ~/.vim directory and fetch submodules
 
-Install Ack
+  	cd ~/.vim
+  	git submodule init
+  	git sumbodule update
 
-    sudo apt-get install ack-grep
+## Command-T
 
-Softlink ack
+Compile command-t
 
-    sudo ln -s /usr/bin/ack-grep /usr/bin/ack
-
-Command-t requires vim to be compiled with ruby. It also needs to be made using the system's default ruby.
-    sudo apt-get install vim-gnome -y # installs gvim which recompiles vim with ruby
-    rvm use system # only if you use RVM (recommended)
-    cd ~/.vim/bundle/command-t
+    cd bundle/command-t
+    rvm use system # Need to compile with Ruby 1.8
     rake make
 
-Certain colorschemes require 256 colors (like Molokai).
-    sudo apt-get install ncurses-term -y
-    echo 'export TERM=xterm-256color' >> ~/.bashrc
+## Molokai
 
-jslint requires spidermonkey, rhino, or node.js.
+For the molokai color scheme
+
+    sudo apt-get install ncurses-term
+
+Add to .bashrc:
+    
+    export TERM=xterm-256color
+
+## JSLint
+
+For jslint, install node.js
+
     sudo add-apt-repository ppa:jerome-etienne/neoip 
     sudo apt-get update 
     sudo apt-get install nodejs -y
-
-# Reference
-
-## Add a git submodule
-
-    git submodule add <git url> bundle/<plugin name>
-
-## Remove a git submodule
-
-Git submodules must be removed manually.
-
-1. Remove from .gitmodules file
-2. Remove from .git/config file
-3. Remove from cache
-
-    git rm --cached <plugin path>
