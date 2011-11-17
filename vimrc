@@ -131,6 +131,8 @@ nmap <leader>s :SessionList<CR>
 nmap <leader>ss :SessionSave<CR>
 nmap <leader>sa :SessionSaveAs<CR>
 
+nmap <leader>b :tabnew<CR>
+
 " Quick save
 cmap W w<cr>
 
@@ -138,6 +140,9 @@ cmap W w<cr>
 cmap Q q<cr>
 
 nmap <C-f> :Ack 
+
 " Enable the matchit plugin for selecting blocks.
 " This is required by textobj-rubyblock.
 runtime macros/matchit.vim
+
+nnoremap <silent> <F4> :echo 'z= word completions -- zg good word'<CR> :set spell!<CR>
