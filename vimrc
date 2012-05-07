@@ -70,7 +70,7 @@ if has("autocmd")
   autocmd VimEnter * highlight StatusLine term=reverse ctermfg=4 ctermbg=7 gui=bold,reverse
 
   " Set warning of over column 80
-  autocmd BufWinEnter * let w:m1=matchadd('Error', '\%>80v.\+', -1)
+  "autocmd BufWinEnter * let w:m1=matchadd('Error', '\%>80v.\+', -1)
 
   " Filetypes
   autocmd FileType javascript setlocal ts=2 sts=2 sw=2
@@ -134,7 +134,7 @@ nmap <leader>sa :SessionSaveAs<CR>
 nmap <leader>b :tabnew<CR>
 
 " Quick save
-cmap W w<cr>
+"cmap W w<cr>
 
 " Map Quit to Q
 cmap Q q<cr>
