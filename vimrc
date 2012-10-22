@@ -58,7 +58,7 @@ set noswapfile
 
 if has("autocmd")
   " au is short for autocmd
-  
+
   " Restore cursor position
   autocmd BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
@@ -69,8 +69,8 @@ if has("autocmd")
   " Change statusline color of active window
   autocmd VimEnter * highlight StatusLine term=reverse ctermfg=4 ctermbg=7 gui=bold,reverse
 
-  " Set warning of over column 80
-  "autocmd BufWinEnter * let w:m1=matchadd('Error', '\%>80v.\+', -1)
+  " Set warning of over column 90
+  autocmd BufWinEnter * let w:m1=matchadd('Error', '\%>90v.\+', -1)
 
   " Filetypes
   autocmd FileType javascript setlocal ts=2 sts=2 sw=2
@@ -100,7 +100,7 @@ map <leader>u :source ~/.vimrc<cr> " update the system settings from my .vimrc f
 set pastetoggle=<F2>
 
 " Ctrl-N to disable search match highlight
-" Note: C-N was the same as k (move to next line ) 
+" Note: C-N was the same as k (move to next line )
 nmap <silent> <C-N> :silent noh<CR>
 
 " Ctrl-P to Display the file browser tree
@@ -139,7 +139,7 @@ nmap <leader>b :tabnew<CR>
 " Map Quit to Q
 cmap Q q<cr>
 
-nmap <C-f> :Ack 
+nmap <C-f> :Ack
 
 " Enable the matchit plugin for selecting blocks.
 " This is required by textobj-rubyblock.
