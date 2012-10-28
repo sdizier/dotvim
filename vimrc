@@ -29,6 +29,8 @@ set incsearch       " search while typing
 set ignorecase      " case insensitive search
 set smartcase       " case insensitive when lower case, else case sensitive
 
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 " Line numbers
 set number
 
@@ -105,9 +107,10 @@ nmap <silent> <C-N> :silent noh<CR>
 
 " Ctrl-P to Display the file browser tree
 " Note: C-P was the same as j (move to previous line)
-nmap <C-P> :NERDTreeToggle<CR>
-" ,p to show current file in the tree
-nmap <leader>p :NERDTreeFind<CR>
+" ctrl-[ to open :NERDTREE
+nmap <C-[> :NERDTreeToggle<CR>
+" ,[ to show current file in the tree
+nmap <leader>[ :NERDTreeFind<CR>
 
 " ,/ to invert comment on the current line/selection
 nmap <leader>/ :call NERDComment(0, "invert")<cr>
