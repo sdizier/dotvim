@@ -76,3 +76,5 @@
         url = https://github.com/walm/jshint2.vim.git
 [submodule "bundle/jshint.vim"]
         url = https://github.com/Shutnik/jshint2.vim.git
+[submodule "bundle/tabular"]
+        url = https://github.com/godlygeek/tabular.git
