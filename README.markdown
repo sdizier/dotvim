@@ -10,7 +10,7 @@ Switch to the ~/.vim directory and fetch submodules
 
   	cd ~/.vim
   	git submodule init
-  	git sumbodule update
+  	git submodule update
   	
 Install Ack
 
@@ -38,10 +38,9 @@ Add to .bashrc:
     
     export TERM=xterm-256color
 
-## JSLint
+## JSHint
 
-For jslint, install node.js
+For jshint, install npm
 
-    sudo add-apt-repository ppa:jerome-etienne/neoip 
-    sudo apt-get update 
-    sudo apt-get install nodejs -y
+    sudo apt-get install npm -y
+    npm install jshint
